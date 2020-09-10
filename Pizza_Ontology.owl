@@ -1,0 +1,1116 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10">
+        <rdfs:comment>This is a practise ontology for class.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isToppingOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasBaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasIngredient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isIngredientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicinessValuePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasIngredient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isIngredientOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isToppingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isToppingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCalorificContentValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCalorificContentValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaHotPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaHotPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#JalapenoPepperTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#JalapenoPepperTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperoniTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that has mozarella and tomato (and basil!)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperoniTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperoniTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that has mozarella and tomato (and basil!)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AnchovyTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AnchovyTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CaperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CaperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheesyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheesyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#America"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#England"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#France"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Germany"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#DeepPanBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#DeepPanBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ThinAndCrispyBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#FourCheesesPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#FourCheesesPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#GreenPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#GreenPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HamTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HamTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HighCaloriePizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HighCaloriePizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCalorificContentValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicinessValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#InterestingPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#InterestingPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#JalapenoPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#JalapenoPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#LowCaloriePizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#LowCaloriePizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCalorificContentValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MargherittaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MargherittaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that has mozarella and tomato (and basil!)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicinessValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicinessValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ParmesanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MushroomTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MushroomTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NonVegetarianPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NonVegetarianPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegeterianPizza"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegeterianPizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ParmesanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ParmesanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCalorificContentValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PrawnTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PrawnTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#RedPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#RedPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SalamiTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SalamiTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SohoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#OliveTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ParmesanTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#OliveTopping"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A pizza that has mozarella and tomato (and basil!)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicinessValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicinessValuePartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicyBeefTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicyBeefTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasCountryOfOrigin"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#America"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ThinAndCrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ThinAndCrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TunaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TunaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#UnclosedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#UnclosedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MozarellaTopping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ValuePartition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegeterianPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegeterianPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#hasTopping"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Example-Margheritta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Example-Margheritta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MargherittaPizza"/>
+        <hasCalorificContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">263</hasCalorificContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Example-QuattroFormaggio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Example-QuattroFormaggio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheesyPizza"/>
+        <hasCalorificContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">723</hasCalorificContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ExampleAmericanaHotPizza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ExampleAmericanaHotPizza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaHotPizza"/>
+        <hasCalorificContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">390</hasCalorificContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ExampleFruttiDiMare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#ExampleFruttiDiMare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping"/>
+        <hasCalorificContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</hasCalorificContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaHotPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AmericanaPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MargherittaPizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SohoPizza"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#AnchovyTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PrawnTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TunaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CaperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MushroomTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#OliveTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#TomatoTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SeafoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#GreenPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#JalapenoPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#RedPepperTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HamTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SalamiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#SpicyBeefTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#HotSpiciness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MediumSpiciness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#MildSpiciness"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#PizzaToppings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/paula/ontologies/2019/9/untitled-ontology-10#Pizzabase"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
